@@ -1,0 +1,173 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="BPMN Payment Process" id="bpmn-payment">
+    <mxGraphModel dx="1670" dy="1230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#82b366;verticalAlign=top;fontStyle=1;fontSize=10;spacingTop=5;" value="Компенсируемые шаги" vertex="1">
+          <mxGeometry height="120" width="420" x="95" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=10;spacingTop=5;" value="Pivot" vertex="1">
+          <mxGeometry height="120" width="185" x="605" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=10;spacingTop=5;" value="Повторяемые шаги" vertex="1">
+          <mxGeometry height="120" width="440" x="925" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="g4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#b85450;verticalAlign=top;fontStyle=1;fontSize=10;spacingTop=5;" value="Компенсация" vertex="1">
+          <mxGeometry height="105" width="885" x="605" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;CREATE_PAYMENT&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Создать платёж&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="110" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;DEBIT_FUNDS&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Списать средства&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="330" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="gw1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="X" vertex="1">
+          <mxGeometry height="40" width="40" x="540" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;FRAUD_CHECK&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Антифрод-проверка&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="620" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="gw2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="X" vertex="1">
+          <mxGeometry height="40" width="40" x="840" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;TRANSFER_FUNDS&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Перевести контрагенту&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="175" x="945" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;SEND_NOTIFICATION&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Уведомить клиента&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="1175" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="end_ok" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1400" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ok" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#82b366;" value="Завершён" vertex="1">
+          <mxGeometry height="20" width="60" x="1385" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cancel_err" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;CANCEL_PAYMENT&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Отменить платёж&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="480" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="end_err" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="545" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_err" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#b85450;" value="Отменён" vertex="1">
+          <mxGeometry height="20" width="60" x="530" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="t_mr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;MANUAL_REVIEW&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Ожидание решения оператора&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="190" x="790" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="timer_lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;font style=&quot;font-size:9px&quot;&gt;Таймер 20 мин&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="985" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="gw3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="X" vertex="1">
+          <mxGeometry height="40" width="40" x="865" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="c_refund" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;REFUND_FUNDS&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Вернуть средства&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="155" x="620" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="c_cancel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;CANCEL_PAYMENT&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Отменить платёж&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="160" x="820" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="c_notify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;SEND_NOTIFICATION&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Уведомить об отмене&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="170" x="1025" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="c_sec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;NOTIFY_SECURITY&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;Уведомить безопасность&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="170" x="1240" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="end_cancel" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1450" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_cancel" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#b85450;" value="Отменён" vertex="1">
+          <mxGeometry height="20" width="60" x="1435" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="t1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="t2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="gw1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="gw1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="t3" value="&lt;font style=&quot;font-size:9px&quot;&gt;Успех&lt;/font&gt;">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="t3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="gw2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="gw2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="t4" value="&lt;font style=&quot;font-size:9px&quot;&gt;Разрешение&lt;/font&gt;">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="t4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="t5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="t5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="end_ok">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="gw1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="cancel_err" value="&lt;font style=&quot;font-size:9px&quot;&gt;Ошибка&lt;/font&gt;">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="cancel_err" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="end_err">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="gw2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_mr" value="&lt;font style=&quot;font-size:9px&quot;&gt;Ручная проверка&lt;/font&gt;">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="t_mr" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gw3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="gw3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t4" value="&lt;font style=&quot;font-size:9px&quot;&gt;Одобрено / Cut-off&lt;/font&gt;">
+          <mxGeometry relative="1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1033" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="gw2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c_refund" value="&lt;font style=&quot;font-size:9px&quot;&gt;Запрет&lt;/font&gt;">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="820" y="125" />
+              <mxPoint x="820" y="210" />
+              <mxPoint x="698" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="gw3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c_refund" value="&lt;font style=&quot;font-size:9px&quot;&gt;Отклонено&lt;/font&gt;">
+          <mxGeometry relative="1" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="800" y="370" />
+              <mxPoint x="800" y="410" />
+              <mxPoint x="580" y="410" />
+              <mxPoint x="580" y="483" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="c_refund" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="c_cancel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="c_cancel" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="c_notify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="c_notify" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="c_sec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="c_sec" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;" target="end_cancel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
